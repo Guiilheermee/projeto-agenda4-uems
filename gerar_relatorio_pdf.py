@@ -165,7 +165,10 @@ def build_pdf():
     # QUADRO INFORMATIVO
     info_data = [
         [Paragraph("<b>Atividade:</b> Envio de Arquivo — Agenda 4", box_style), Paragraph("<b>Ambiente:</b> Python 3.9 + Jupyter + Streamlit", box_style)],
-        # [Paragraph("<b>Status:</b> Todas as 5 Tarefas + Extra Concluídos", box_style), Paragraph("<b>Critérios Atendidos:</b> 1 a 6 (100% + Bônus Extra)", box_style)]
+        [
+            Paragraph('<b>Dashboard Online:</b> <a href="https://projeto-agenda4-uems.streamlit.app/" color="#1D4ED8"><u>projeto-agenda4-uems.streamlit.app</u></a>', box_style),
+            Paragraph('<b>Código no GitHub:</b> <a href="https://github.com/Guiilheermee/projeto-agenda4-uems" color="#1D4ED8"><u>github.com/Guiilheermee/projeto-agenda4-uems</u></a>', box_style)
+        ]
     ]
     t_info = Table(info_data, colWidths=[250, 254])
     t_info.setStyle(TableStyle([
@@ -347,12 +350,15 @@ def build_pdf():
         body_style
     ))
 
-    elements.append(Paragraph("<b>5.3 Dashboard Interativo em Streamlit (app.py):</b>", h2_style))
+    elements.append(Paragraph("<b>5.3 Dashboard Interativo em Streamlit (Deploy em Produção):</b>", h2_style))
     elements.append(Paragraph(
-        "O painel analítico interativo foi construído no arquivo <b><code>app.py</code></b> com estrutura multi-abas: "
+        "O painel analítico interativo foi construído no arquivo <b><code>app.py</code></b> e está publicado em produção no "
+        "<b>Streamlit Community Cloud</b>, acessível publicamente através dos links:<br/>"
+        "🌐 <b>Dashboard Online:</b> <a href=\"https://projeto-agenda4-uems.streamlit.app/\" color=\"#1D4ED8\"><u>https://projeto-agenda4-uems.streamlit.app/</u></a><br/>"
+        "📂 <b>Repositório no GitHub:</b> <a href=\"https://github.com/Guiilheermee/projeto-agenda4-uems\" color=\"#1D4ED8\"><u>https://github.com/Guiilheermee/projeto-agenda4-uems</u></a><br/><br/>"
+        "O dashboard conta com arquitetura responsiva (compatível com Dark e Light Mode) e estrutura multi-abas: "
         "Aba 1 (Trajetória temporal multivariada e gráficos analíticos com seleção dinâmica de variáveis), Aba 2 (Narrativa visual e tabela síntese formatada), "
-        "Aba 3 (03 Insights Macroeconômicos com cartões informativos) e Aba 4 (Base de dados tratada com botão para download em CSV). "
-        "Comando para inicialização no terminal: <code>streamlit run app.py</code>.",
+        "Aba 3 (03 Insights Macroeconômicos com cartões informativos) e Aba 4 (Base de dados tratada com botão para download em CSV).",
         body_style
     ))
 

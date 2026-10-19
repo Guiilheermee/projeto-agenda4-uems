@@ -1,8 +1,10 @@
 # 📊 Painel Macroeconômico: Inflação, Juros e Câmbio (Brasil: 2018–2024)
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.50.0-FF4B4B.svg)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App%20Online-FF4B4B.svg)](https://projeto-agenda4-uems.streamlit.app/)
 [![UEMS](https://img.shields.io/badge/UEMS-Especializa%C3%A7%C3%A3o%20em%20Ci%C3%AAncia%20de%20Dados%20e%20IA-065F46.svg)](https://www.uems.br/)
+
+> 🌐 **Acesse a Aplicação em Produção:** [https://projeto-agenda4-uems.streamlit.app/](https://projeto-agenda4-uems.streamlit.app/)
 
 Projeto Integrador desenvolvido para a **Agenda 4: Da Captura à Visualização** da disciplina de **Captura, Tratamento e Visualização de Dados** na **Especialização em Ciência de Dados e Inteligência Artificial (EaD)** da **Universidade Estadual de Mato Grosso do Sul (UEMS Virtual)**.
 
